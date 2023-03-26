@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/github.io/portfolio-AlexanderDavis/static/css/main.f2d12ebb.chunk.css",
-    "main.js": "/github.io/portfolio-AlexanderDavis/static/js/main.d412476a.chunk.js",
-    "main.js.map": "/github.io/portfolio-AlexanderDavis/static/js/main.d412476a.chunk.js.map",
-    "runtime-main.js": "/github.io/portfolio-AlexanderDavis/static/js/runtime-main.9fd1f3d8.js",
-    "runtime-main.js.map": "/github.io/portfolio-AlexanderDavis/static/js/runtime-main.9fd1f3d8.js.map",
-    "static/js/2.6f1737b1.chunk.js": "/github.io/portfolio-AlexanderDavis/static/js/2.6f1737b1.chunk.js",
-    "static/js/2.6f1737b1.chunk.js.map": "/github.io/portfolio-AlexanderDavis/static/js/2.6f1737b1.chunk.js.map",
-    "index.html": "/github.io/portfolio-AlexanderDavis/index.html",
-    "precache-manifest.e481346fe9d576498312a53ca1c60813.js": "/github.io/portfolio-AlexanderDavis/precache-manifest.e481346fe9d576498312a53ca1c60813.js",
-    "service-worker.js": "/github.io/portfolio-AlexanderDavis/service-worker.js",
-    "static/css/main.f2d12ebb.chunk.css.map": "/github.io/portfolio-AlexanderDavis/static/css/main.f2d12ebb.chunk.css.map",
-    "static/js/2.6f1737b1.chunk.js.LICENSE.txt": "/github.io/portfolio-AlexanderDavis/static/js/2.6f1737b1.chunk.js.LICENSE.txt",
-    "static/media/code.svg": "/github.io/portfolio-AlexanderDavis/static/media/code.f3afea6e.svg",
-    "static/media/hexlogo.svg": "/github.io/portfolio-AlexanderDavis/static/media/hexlogo.8f53edd1.svg",
-    "static/media/me.png": "/github.io/portfolio-AlexanderDavis/static/media/me.0110e780.png",
-    "static/media/plate.svg": "/github.io/portfolio-AlexanderDavis/static/media/plate.50baad3b.svg",
-    "static/media/plato.svg": "/github.io/portfolio-AlexanderDavis/static/media/plato.9542bf91.svg"
+    "main.css": "/github.io/static/css/main.f2d12ebb.chunk.css",
+    "main.js": "/github.io/static/js/main.e5465cb0.chunk.js",
+    "main.js.map": "/github.io/static/js/main.e5465cb0.chunk.js.map",
+    "runtime-main.js": "/github.io/static/js/runtime-main.dd44c814.js",
+    "runtime-main.js.map": "/github.io/static/js/runtime-main.dd44c814.js.map",
+    "static/js/2.6f1737b1.chunk.js": "/github.io/static/js/2.6f1737b1.chunk.js",
+    "static/js/2.6f1737b1.chunk.js.map": "/github.io/static/js/2.6f1737b1.chunk.js.map",
+    "index.html": "/github.io/index.html",
+    "precache-manifest.e373332156c3030ecc4aa7d833cbefb8.js": "/github.io/precache-manifest.e373332156c3030ecc4aa7d833cbefb8.js",
+    "service-worker.js": "/github.io/service-worker.js",
+    "static/css/main.f2d12ebb.chunk.css.map": "/github.io/static/css/main.f2d12ebb.chunk.css.map",
+    "static/js/2.6f1737b1.chunk.js.LICENSE.txt": "/github.io/static/js/2.6f1737b1.chunk.js.LICENSE.txt",
+    "static/media/code.svg": "/github.io/static/media/code.f3afea6e.svg",
+    "static/media/hexlogo.svg": "/github.io/static/media/hexlogo.8f53edd1.svg",
+    "static/media/me.png": "/github.io/static/media/me.0110e780.png",
+    "static/media/plate.svg": "/github.io/static/media/plate.50baad3b.svg",
+    "static/media/plato.svg": "/github.io/static/media/plato.9542bf91.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9fd1f3d8.js",
+    "static/js/runtime-main.dd44c814.js",
     "static/js/2.6f1737b1.chunk.js",
     "static/css/main.f2d12ebb.chunk.css",
-    "static/js/main.d412476a.chunk.js"
+    "static/js/main.e5465cb0.chunk.js"
   ]
 }
