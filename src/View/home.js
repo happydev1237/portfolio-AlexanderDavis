@@ -6,13 +6,14 @@ import cstyles from './home.module.css';
 import leaf1 from '../assets/plato.svg';
 import leaf2 from '../assets/plate.svg';
 import hlogo from '../assets/hexlogo.svg';
+import me from '../assets/me.png';
 import code from '../assets/code.svg';
 import ReactCompareImage from 'react-compare-image';
 import emailjs from 'emailjs-com';
 import ReCAPTCHA from "react-google-recaptcha";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faArrowsAltH, faRocket } from '@fortawesome/free-solid-svg-icons'
-import { faGithubAlt, faDeviantart, faInstagram, faLinkedinIn, faDribbble } from '@fortawesome/free-brands-svg-icons'
+import { faGithubAlt, faDeviantart, faDribbble } from '@fortawesome/free-brands-svg-icons'
 import ReactGA from 'react-ga';
 
 
@@ -55,7 +56,7 @@ export default class Home extends Component {
         sendinfo: "Sending Message"
       });
 
-      emailjs.sendForm('gmail', 'contact', e.target, 'user_yYmXLFgei1Nw3P3rJBMaS')
+      emailjs.sendForm('gmail', 'contact', e.target, '')
         .then((result) => {
           this.setState({
             sendinfo: "Message Sent Successfully",
@@ -99,18 +100,15 @@ export default class Home extends Component {
         <section className={`hero is-fullheight ${cstyles.svgg}`}>
           <Navba></Navba>
           <div className="hero-body" >
-
             <div className="container" style={{ marginLeft: '3vw' }}>
-
               <p id={cstyles.title}>
                 HELLO, <br></br>
-                I AM AZIZ.
+                I AM Alexader Davis.
                 </p>
-              <p className={cstyles.subheading}>An aspiring developer and designer.</p>
+              <p className={cstyles.subheading}>An a frontend developer and designer.</p>
               <br />
-              <button onClick={() => this.showIt('explore')} className="button" id={cstyles.custombtn} >Explore</button>
+              <button onClick={() => this.showIt('explore')} className="button" id={cstyles.custombtn}>Explore</button>
             </div>
-
             <div className={cstyles.cardss}>
               <img alt="logo" className={cstyles.floating} style={{ position: 'absolute', zIndex: 2, margin: 0 }} src={leaf1} />
               <img alt="logo" className={cstyles.rotatecenter} style={{ position: 'absolute', zIndex: 1, }} src={leaf2} />
@@ -121,44 +119,28 @@ export default class Home extends Component {
 
 
         {herobar('What I built?', 'Awesome stuff')}
-
-
         <section className={`hero is-fullheight ${cstyles.svgg}`} style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }} >
           <div id="portfolio" className="columns is-desktop" style={{ padding: 20, paddingBottom: 0 }}>
-
             <div className={`column ${cstyles.cluster}`}>
-              {box("https://res.cloudinary.com/azizcloud/image/upload/v1590315235/portfolio/d5vfhxrpvitibwnu4fqs.jpg", "Cassiopeia CMS", "A bodacious, secure, headless content management system.", ["MongoDB", "Express JS", "React JS", "Node JS"], "https://github.com/AzizStark/CassiopeiaCMS")}
-
+              {box("https://res.cloudinary.com/azizcloud/image/upload/v1590315235/portfolio/d5vfhxrpvitibwnu4fqs.jpg", "Cassiopeia CMS", "A bodacious, secure, headless content management system.", ["MongoDB", "Express JS", "React JS", "Node JS"], "https://github.com/happydev1237/CassiopeiaCMS")}
             </div>
             <div className={`column ${cstyles.cluster}`}>
               {box("https://res.cloudinary.com/azizcloud/image/upload/t_equla/v1590315236/portfolio/lxx99yyawhv5evn6mmpz.jpg", "Quiva - Fancy Text Generator", "A fancy text app for android for creating stylish text based on unicode characters and glyphs.", ["JavaScript", "React Native"], "https://galaxystore.samsung.com/detail/com.quiva")}
             </div>
             <div className={`column ${cstyles.cluster}`}>
-              {box("https://res.cloudinary.com/azizcloud/image/upload/v1590315235/portfolio/pqecxwjuxinwmxak7tkw.jpg", "Material Requirement Processing", "A web-app for calculating the materials and components needed to manufacture a large number of products.", ["PHP", "Oracle", "Material UI"], "https://github.com/AzizStark/Material-Requirement-Processing")}
+              {box("https://res.cloudinary.com/azizcloud/image/upload/v1590315235/portfolio/pqecxwjuxinwmxak7tkw.jpg", "Material Requirement Processing", "A web-app for calculating the materials and components needed to manufacture a large number of products.", ["PHP", "Oracle", "Material UI"], "https://github.com/happydev1237/Material-Requirement-Processing")}
             </div>
-            <div className={`column ${cstyles.cluster}`}>
-              {box("https://res.cloudinary.com/azizcloud/image/upload/v1590315673/portfolio/wzqvjrhohtjmo68m8voh.png", "Desktop Widgets", "15+ Widgets for desktop with varying functionalities. Downloaded more than 100,000 times.", ["Rainmeter"], "https://www.deviantart.com/azizstark/gallery/67780296/widgets")}
-            </div>
-
-
           </div>
-
           <div className="columns is-desktop cluster" style={{ padding: 20, paddingTop: 0 }}>
-
-
             <div className={`column ${cstyles.cluster}`}>
-              {box("https://res.cloudinary.com/azizcloud/image/upload/v1590315233/portfolio/htnl1q9chykaheksucew.jpg", "Stash", "A web-based cryptographic text hasher and encrypter.", ["JavaScript", "Svelte JS", "Node JS"], "https://stash.azizstark.tech")}
+              {box("https://res.cloudinary.com/azizcloud/image/upload/v1590315233/portfolio/htnl1q9chykaheksucew.jpg", "Stash", "A web-based cryptographic text hasher and encrypter.", ["JavaScript", "Svelte JS", "Node JS"], "https://github.com/happydev1237/cryptographic-hasher")}
             </div>
             <div className={`column ${cstyles.cluster}`}>
               {box("https://res.cloudinary.com/azizcloud/image/upload/v1590315235/portfolio/agncefcs92v7duq9xwfd.jpg", "Tech Zeal", "A website for the college symposium that was used by more than 1000 students to register for the events.", ["HTML", "JavaScript", "Firebase"], "https://gennext.web.app/")}
             </div>
             <div className={`column ${cstyles.cluster}`}>
-              {box("https://res.cloudinary.com/azizcloud/image/upload/v1590315234/portfolio/u021xlqihtpanv8kckoy.jpg", "Foodie", "A front-end user interface for food ordering web-app with a smooth user experience.", ["JavaScript", "React JS"], "https://foodie.azizstark.tech")}
+              {box("https://res.cloudinary.com/azizcloud/image/upload/v1590315234/portfolio/u021xlqihtpanv8kckoy.jpg", "Foodie", "A front-end user interface for food ordering web-app with a smooth user experience.", ["JavaScript", "React JS"], "https://github.com/happydev1237/Food")}
             </div>
-            <div className={`column ${cstyles.cluster}`}>
-              {box("https://res.cloudinary.com/azizcloud/image/upload/t_equla/v1590315235/portfolio/imv2i0jyhabif9k9uqhw.jpg", "Zippy", "E-Magazines consisting of articles from my college friends.", ["Figma", "Photoshop"], "https://drive.google.com/file/d/1svlPLO3_Q4nVtspJMnRiZTasUhOLaMG7/view")}
-            </div>
-
           </div>
         </section>
 
@@ -201,32 +183,24 @@ export default class Home extends Component {
             </div>
           </div>
         </section>
-
-
-        {herobar('Who am I?', "I'm Aziz")}
+        {herobar('Who am I?', "I'm Alex")}
         <section id="about" className={`hero is-fullheight ${cstyles.svgg}`} style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
           <div className="columns is-desktop" style={{ padding: '10%' }}>
             <div className="column  has-text-centered" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <img alt="aziz" src={'https://res.cloudinary.com/azizcloud/image/upload/t_equla/v1590335741/portfolio/jfixlskwxiz4wwp9dfda.jpg'} style={{ width: '55%', borderRadius: 8 }} />
+              <img alt="AlexanderDavis" className={cstyles.rotatecenter} style={{ position: 'absolute', zIndex: 1, }} src={me} />
             </div>
             <div className="column is-three-fifths-desktop" style={{ fontFamily: 'nunito', paddingLeft: 0 }}>
               <h1 style={{ display: 'inline-block', fontSize: '2rem', color: 'rgb(28, 255, 189)', fontWeight: 500 }}>ME</h1>
               <div style={{ marginLeft: 15, display: 'inline-block', background: 'linear-gradient(91.18deg, rgb(28, 255, 189) -16.44%, rgba(46, 167, 255, 0) 107.71%)', borderRadius: 21, width: 'calc(100% - 4rem)', height: 6 }}></div>
               <div className="contents" style={{ fontSize: "calc(12px + 1vh)", fontWeight: 300, padding: 33, paddingLeft: 0, paddingRight: 0, textAlign: 'justify' }}>
-                Hey! <span role="img" aria-label="wave">👋</span>I'm Aziz Rahman, I love web and mobile app development and have developed a few websites and projects️. I'm also passionate about design <span role="img" aria-label="pallete">🎨</span>. I spend my free time listening to music <span role="img" aria-label="music">🎧</span>, playing video games and surfing the internet to explore the world.
-                </div>
-              <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-                <a style={styles.bcolor} href="mailto:theazizstark@gmail.com?Subject=Hello" target="_top"><FontAwesomeIcon className={cstyles.iclick} icon={faEnvelope} size="2x" /></a>
-                <a style={styles.bcolor} href="https://github.com/azizstark" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className={cstyles.iclick} icon={faGithubAlt} size="2x" /></a>
-                <a style={styles.bcolor} href="https://deviantart.com/azizstark" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className={cstyles.iclick} icon={faDeviantart} size="2x" /></a>
-                <a style={styles.bcolor} href="https://dribbble.com/AzizStark" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className={cstyles.iclick} icon={faDribbble} size="2x" /></a>
-                <a style={styles.bcolor} href="https://www.instagram.com/the_pixel_dreamer" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className={cstyles.iclick} icon={faInstagram} size="2x" /></a>
-                <a style={styles.bcolor} href="https://www.linkedin.com/in/theazizrahman/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className={cstyles.iclick} icon={faLinkedinIn} size="2x" /></a>
+                Hey! <span role="img" aria-label="wave">👋</span>I'm Alexader Davis, I love web and mobile app development and have developed a few websites and projects️. I'm also passionate about design <span role="img" aria-label="pallete">🎨</span>. I spend my free time listening to music <span role="img" aria-label="music">🎧</span>, playing video games and surfing the internet to explore the world.
+              </div>
+              <div className="email">
+                Please send me meesage here <a href="https://mail.google.com/mail/u/0/#sent?compose=new" style={{color: "white", fontWeight: 800}}>Alexanderdavis0305@gmail.com</a>
               </div>
             </div>
           </div>
         </section>
-
         {herobar('Want to talk?', 'Contact me')}
         <section id="contact" className={`hero is-fullheight ${cstyles.svgg}`} style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
           <div className="columns is-desktop">
@@ -269,12 +243,11 @@ export default class Home extends Component {
             </div>
           </div>
         </section>
-
         <footer className="footer" style={{ backgroundColor: '#152636', color: '#ffffff', padding: '2%' }}>
           <div className="columns">
             <div className="column has-text-centered">
               <p style={{ fontFamily: 'Nunito', fontWeight: 400, color: 'rgb(28, 255, 189)', fontSize: "calc(12px + 0.3vh)" }}>
-                Content and Graphics © 2021 AzizStark
+                Content and Graphics © 2020 Alex
             </p>
             </div>
           </div>
